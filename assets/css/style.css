@@ -135,7 +135,7 @@ p {
   text-transform: uppercase; }
   .main-btn i {
     margin-right: 5px; }
-  .main-btn:hover {
+  .main-btn:hover, .main-btn:focus {
     background-color: #fff;
     color: #C22D74;
     border-color: #C22D74; }
@@ -143,7 +143,7 @@ p {
     background-color: #fff;
     color: #C22D74;
     border-color: #C22D74; }
-    .main-btn.main-btn-2:hover {
+    .main-btn.main-btn-2:hover .main-btn.main-btn-2:focus {
       background-color: #C22D74;
       border-color: #C22D74;
       color: #fff; }
@@ -558,7 +558,20 @@ p {
   padding: 0;
   position: relative; }
   .navbar .navbar-brand img {
-    max-width: 112px; }
+    max-width: 112px;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+  }
+  .navbar a.navbar-brand:focus img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
   .navbar .navbar-toggler .toggler-icon {
     width: 30px;
     height: 2px;
@@ -614,7 +627,7 @@ p {
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .navbar .navbar-nav .nav-item a {
           font-size: 13px; } }
-    .navbar .navbar-nav .nav-item.active a, .navbar .navbar-nav .nav-item:hover a {
+    .navbar .navbar-nav .nav-item.active a, .navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a:focus {
       color: #C22D74; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar .navbar-btn {
@@ -773,7 +786,7 @@ p {
         @media (max-width: 767px) {
           .about-image .about-btn .main-btn span {
             font-size: 28px; } }
-      .about-image .about-btn .main-btn:hover {
+      .about-image .about-btn .main-btn:hover, .about-image .about-btn .main-btn:focus {
         border-color: #C22D74; }
       @media (max-width: 767px) {
         .about-image .about-btn .main-btn {
@@ -1033,16 +1046,17 @@ p {
   font-size: 14px;
 }
 
-.single-team:hover .team-content {
+.single-team .team-content {
   background-color: #fff;
   margin-top: -60px;
+}
+
+.single-team:hover .team-content {
+  margin-top: -70px;
   -webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1); }
-  .single-team:hover .team-content .social {
-    margin-top: 25px;
-    opacity: 1;
-    visibility: visible; }
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+}
 
 /*===========================
       7.TESTIMONIAL css
@@ -1293,7 +1307,7 @@ p.form-message.error {
     -ms-transition: all 0.4s ease-out 0s;
     -o-transition: all 0.4s ease-out 0s;
     transition: all 0.4s ease-out 0s; }
-    .footer-logo .footer-social li a:hover {
+    .footer-logo .footer-social li a:hover, .footer-logo .footer-social li a:focus  {
       background-color: #C22D74;
       color: #fff; }
 
@@ -1313,7 +1327,7 @@ p.form-message.error {
     -ms-transition: all 0.4s ease-out 0s;
     -o-transition: all 0.4s ease-out 0s;
     transition: all 0.4s ease-out 0s; }
-    .footer-link a:hover {
+    .footer-link a:hover, .footer-link a:focus {
       color: #C22D74; }
 
 .footer-newsleter p {
@@ -1345,6 +1359,10 @@ p.form-message.error {
     font-size: 20px;
     line-height: 57px;
     cursor: pointer; }
+
+  .footer-newsleter .newsleter button:focus {
+    font-weight: bolder;
+  }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .footer-newsleter .newsleter button {
         width: 45px; } }
@@ -1387,6 +1405,6 @@ p.form-message.error {
   transition: all 0.4s ease-out 0s;
   color: #fff;
   background-color: #C22D74; }
-  .back-to-top:hover {
+  .back-to-top:hover, .back-to-top:focus {
     color: #C22D74;
     background-color: #fff; }
