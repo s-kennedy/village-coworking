@@ -655,6 +655,11 @@ p {
     right: 0;
     width: 55%;
     height: 100%; }
+  @media (max-width: 767px) {
+    .header-banner .banner-image {
+      display: none;
+    }
+  }
   .header-banner .banner-content {
     position: relative;
     z-index: 9;
@@ -975,7 +980,15 @@ p {
 
 .team-area a {
   color: #C22D74;
+}
+
+.team-area a:hover, .team-area a:focus {
   text-decoration: underline;
+}
+
+.single-team .team-image {
+  position: relative;
+
 }
 
 .single-team .team-image img {
@@ -1341,9 +1354,9 @@ p.form-message.error {
     height: 50px;
     padding: 0 20px;
     border: 1px solid #C22D74;
-    background-color: #white; }
+    background-color: #ffffff; }
   .footer-newsleter .newsleter input:focus {
-    background-color: #f6f6f6;
+    background-color: #fafafa;
   }
   .footer-newsleter .newsleter button {
     border: 0;
@@ -1361,7 +1374,8 @@ p.form-message.error {
     cursor: pointer; }
 
   .footer-newsleter .newsleter button:focus {
-    font-weight: bolder;
+    color: #ffffff;
+    background-color: #C22D74;
   }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .footer-newsleter .newsleter button {
