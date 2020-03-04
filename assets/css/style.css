@@ -19,7 +19,7 @@
 /*===========================
     1. COMMON css
 ===========================*/
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Kalam:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Vidaloka:400,700&display=swap');
 body {
   font-family: 'Karla', sans-serif;
   font-weight: normal;
@@ -63,15 +63,15 @@ h6 {
   margin: 0px; }
 
 h1 {
-  font-family: 'Kalam', serif;
+  font-family: 'Vidaloka', serif;
   font-size: 60px; }
 
 h2 {
-  font-family: 'Kalam', serif;
+  font-family: 'Vidaloka', serif;
   font-size: 36px; }
 
 h3 {
-  font-family: 'Kalam', serif;
+  font-family: 'Vidaloka', serif;
   font-size: 28px; }
 
 h4 {
@@ -940,7 +940,7 @@ a.text-link:hover, a.text-link:focus {
     .single-project .project-content .project-title {
       font-size: 22px;
       font-weight: 600;
-      font-family: 'Kalam', sans-serif;
+      font-family: 'Vidaloka', sans-serif;
       position: relative;
       color: #fff;
       margin-left: 60px; }
@@ -1022,7 +1022,7 @@ a.text-link:hover, a.text-link:focus {
     font-size: 18px;
     font-weight: 600;
     color: #121619;
-    font-family: 'Kalam', sans-serif;
+    font-family: 'Vidaloka', sans-serif;
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -1220,7 +1220,7 @@ p.form-message.error {
     border-radius: 5px;
     padding: 0 30px;
     background-color: #fff;
-    font-family: 'Kalam', sans-serif;
+    font-family: 'Vidaloka', sans-serif;
     font-size: 16px; }
   .contact-form .single-form textarea {
     height: 160px;
@@ -1335,7 +1335,7 @@ p.form-message.error {
 
 .f-title .title {
   font-size: 22px;
-  font-family: 'Kalam', sans-serif;
+  font-family: 'Vidaloka', sans-serif;
   font-weight: 600; }
 
 
@@ -1438,7 +1438,7 @@ p.form-message.error {
 }
 
 .title-font {
-  font-family: 'Kalam', sans-serif !important;
+  font-family: 'Vidaloka', sans-serif !important;
 }
 
 ul.custom-bullets {
@@ -1449,8 +1449,9 @@ ul.custom-bullets {
 ul.custom-bullets li {
   padding-left: 2rem;
   background-image: url(../images/arrow.svg);
-  background-position: 0 55%;
+  background-position: 0 4px;
   background-size: 1rem 1rem;
   background-repeat: no-repeat;
   margin-bottom: 10px;
+  font-size: 17px;
 }
