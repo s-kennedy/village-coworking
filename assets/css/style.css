@@ -19,10 +19,9 @@
 /*===========================
     1. COMMON css
 ===========================*/
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Space+Mono:400,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Kalam:400,700&display=swap');
 body {
-  font-family: 'Space Mono', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #646464; }
@@ -59,18 +58,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Quicksand', serif;
   font-weight: 700;
   color: #121619;
   margin: 0px; }
 
 h1 {
+  font-family: 'Kalam', serif;
   font-size: 60px; }
 
 h2 {
+  font-family: 'Kalam', serif;
   font-size: 36px; }
 
 h3 {
+  font-family: 'Kalam', serif;
   font-size: 28px; }
 
 h4 {
@@ -96,6 +97,20 @@ p {
   @media (max-width: 767px) {
     p {
       font-size: 16px; } }
+
+a.text-link {
+  color: #646464;
+  text-decoration: underline;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+
+a.text-link:hover, a.text-link:focus {
+  color: #C22D74;
+}
 
 .bg_cover {
   background-position: center center;
@@ -131,7 +146,7 @@ p {
   -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.15);
   box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.15);
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Karla', sans-serif;
   text-transform: uppercase; }
   .main-btn i {
     margin-right: 5px; }
@@ -615,7 +630,7 @@ p {
         margin: 5px 0; } }
     .navbar .navbar-nav .nav-item a {
       color: #646464;
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Karla', sans-serif;
       font-size: 15px;
       text-transform: uppercase;
       font-weight: 700;
@@ -682,7 +697,6 @@ p {
       position: relative;
       font-size: 15px;
       font-weight: 600;
-      font-family: 'Quicksand', sans-serif;
       color: #C22D74;
       text-transform: uppercase;
       margin-left: 70px; }
@@ -865,7 +879,7 @@ p {
   .single-services .services-content .services-title {
     font-size: 22px;
     font-weight: 600;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Karla', sans-serif;
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -926,7 +940,7 @@ p {
     .single-project .project-content .project-title {
       font-size: 22px;
       font-weight: 600;
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Kalam', sans-serif;
       position: relative;
       color: #fff;
       margin-left: 60px; }
@@ -1012,7 +1026,7 @@ p {
     font-size: 18px;
     font-weight: 600;
     color: #121619;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Kalam', sans-serif;
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -1143,16 +1157,14 @@ p {
 .single-testimonial .testimonial-content p {
   font-size: 18px;
   color: #fff;
-  font-family: 'Quicksand', sans-serif; }
+}
 
 .single-testimonial .testimonial-content .testimonial-name {
-  font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   color: #fff;
   font-weight: 600; }
 
 .single-testimonial .testimonial-content .sub-title {
-  font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   color: #fff; }
 
@@ -1212,7 +1224,7 @@ p.form-message.error {
     border-radius: 5px;
     padding: 0 30px;
     background-color: #fff;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Kalam', sans-serif;
     font-size: 16px; }
   .contact-form .single-form textarea {
     height: 160px;
@@ -1327,7 +1339,7 @@ p.form-message.error {
 
 .f-title .title {
   font-size: 22px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Kalam', sans-serif;
   font-weight: 600; }
 
 
@@ -1427,4 +1439,22 @@ p.form-message.error {
 .highlight-text {
   color: #C22D74;
   font-weight: 700;
+}
+
+.title-font {
+  font-family: 'Kalam', sans-serif !important;
+}
+
+ul.custom-bullets {
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+ul.custom-bullets li {
+  padding-left: 2rem;
+  background-image: url(../images/arrow.svg);
+  background-position: 0 55%;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
 }
