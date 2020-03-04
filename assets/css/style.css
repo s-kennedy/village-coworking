@@ -573,7 +573,7 @@ a.text-link:hover, a.text-link:focus {
   padding: 0;
   position: relative; }
   .navbar .navbar-brand img {
-    max-width: 112px;
+    /*max-width: 112px;*/
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -992,10 +992,6 @@ a.text-link:hover, a.text-link:focus {
   .team-area {
     padding-top: 75px;
     padding-bottom: 80px; } }
-
-.team-area a {
-  color: #C22D74;
-}
 
 .team-area a:hover, .team-area a:focus {
   text-decoration: underline;
