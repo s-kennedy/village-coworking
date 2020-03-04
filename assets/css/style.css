@@ -823,6 +823,7 @@ p {
 
 .about-content span {
   color: #C22D74;
+  font-weight: 700;
 }
 
 .about-content ul {
@@ -1422,3 +1423,8 @@ p.form-message.error {
   .back-to-top:hover, .back-to-top:focus {
     color: #C22D74;
     background-color: #fff; }
+
+.highlight-text {
+  color: #C22D74;
+  font-weight: 700;
+}
