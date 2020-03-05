@@ -573,7 +573,7 @@ a.text-link:hover, a.text-link:focus {
   padding: 0;
   position: relative; }
   .navbar .navbar-brand img {
-    /*max-width: 112px;*/
+    height: 60px;
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -606,6 +606,9 @@ a.text-link:hover, a.text-link:focus {
       -moz-box-shadow: 0px 5px 25px 0px rgba(244, 128, 74, 0.3);
       box-shadow: 0px 5px 25px 0px rgba(244, 128, 74, 0.3); } }
   @media (max-width: 767px) {
+    .navbar .navbar-brand img {
+      height: 40px;
+    }
     .navbar .navbar-collapse {
       position: absolute;
       top: 128%;
@@ -663,7 +666,7 @@ a.text-link:hover, a.text-link:focus {
       height: 500px; } }
   @media (max-width: 767px) {
     .header-banner {
-      height: 500px; } }
+      height: 400px; } }
   .header-banner .banner-image {
     position: absolute;
     top: 0;
@@ -1017,7 +1020,7 @@ a.text-link:hover, a.text-link:focus {
   transition: all 0.4s ease-out 0s; }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .single-team .team-content {
-      padding: 30px 0; } }
+      padding: 15px; } }
   .single-team .team-content .team-name a {
     font-size: 18px;
     font-weight: 600;
@@ -1121,7 +1124,15 @@ a.text-link:hover, a.text-link:focus {
 
 .testimonial-bg {
   position: relative;
-  z-index: 9; }
+  z-index: 9;
+  background-image: url(../images/testimonial/testimonial-bg.jpg);
+}
+
+@media (max-width: 767px) {
+  .testimonial-bg {
+    background-image: none;
+  }
+}
 
 .testimonial-active {
   background-color: #C22D74;
