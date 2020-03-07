@@ -1152,12 +1152,10 @@ a.text-link:hover, a.text-link:focus {
       .testimonial-area .shape-three {
         right: 35px; } }
 
-.bg_cover {
-  position: relative;
-  z-index: 9;
-}
 
 .testimonial-bg.bg_cover {
+  position: relative;
+  z-index: 9;
   background-image: url(../images/testimonial/testimonial-bg.jpg);
 }
 
