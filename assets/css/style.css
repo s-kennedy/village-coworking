@@ -717,6 +717,36 @@ a.text-link:hover, a.text-link:focus {
         -o-transform: translateY(-50%);
         transform: translateY(-50%); }
 
+
+
+
+/*===========================
+    EMAIL LIST css
+===========================*/
+#email-signup .title {
+  font-size: 35px;
+  text-transform: uppercase; }
+  @media (max-width: 767px) {
+    #email-signup .title {
+      font-size: 26px; } }
+
+#email-signup input[type="email"] {
+  border-color: #56E2E5;
+}
+
+#email-signup .newsleter button {
+  color: #56E2E5;
+}
+
+#email-signup .newsleter button:before {
+  background: #56E2E5;
+}
+
+#email-signup .newsleter button:focus {
+  color: #ffffff;
+  background: #56E2E5;
+}
+
 /*===========================
     3.ABOUT css
 ===========================*/
@@ -1122,9 +1152,12 @@ a.text-link:hover, a.text-link:focus {
       .testimonial-area .shape-three {
         right: 35px; } }
 
-.testimonial-bg {
+.bg_cover {
   position: relative;
   z-index: 9;
+}
+
+.testimonial-bg.bg_cover {
   background-image: url(../images/testimonial/testimonial-bg.jpg);
 }
 
@@ -1251,6 +1284,8 @@ p.form-message.error {
   margin-left: 2px;
   margin-top: 5px;
   color: #f00; }
+
+
 
 /*===========================
          9.MAP css
@@ -1469,4 +1504,42 @@ ul.custom-bullets li {
   background-repeat: no-repeat;
   margin-bottom: 10px;
   font-size: 17px;
+}
+
+.content-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #56E2E5;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .volunteer-content {
+      padding: 15px; } }
+
+.content-box:hover {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+#childcare .shape .shape-three {
+  left: 85px;
+  top: 30px;
+}
+
+#childcare .shape .shape-one {
+  bottom: 100px;
+  right: 50px;
 }
