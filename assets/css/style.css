@@ -169,12 +169,12 @@ a.text-link:hover, a.text-link:focus {
 
 /*===== All Section Title Style =====*/
 .section-title .sub-title {
-  font-size: 18px;
+  font-size: 24px;
   color: #C22D74;
   text-transform: uppercase; }
   @media (max-width: 767px) {
     .section-title .sub-title {
-      font-size: 16px; } }
+      font-size: 18px; } }
 
 .section-title .title {
   font-size: 35px;
@@ -685,7 +685,15 @@ a.text-link:hover, a.text-link:focus {
   .header-banner .banner-content {
     position: relative;
     z-index: 9;
-    text-shadow: 0 0 60px white; }
+    text-shadow: 0 0 60px white;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 767px) {
+    .header-banner .banner-content {
+      margin-top: 40px;
+    }
+  }
     .header-banner .banner-content .sub-title {
       font-size: 24px;
       color: #C22D74;
@@ -1027,8 +1035,7 @@ a.text-link:hover, a.text-link:focus {
 ===========================*/
 @media (max-width: 767px) {
   .team-area {
-    padding-top: 75px;
-    padding-bottom: 80px; } }
+    padding-top: 75px;} }
 
 .team-area a:hover, .team-area a:focus {
   text-decoration: underline;
@@ -1036,17 +1043,15 @@ a.text-link:hover, a.text-link:focus {
 
 .single-team .team-image {
   position: relative;
-
 }
 
 .single-team .team-image img {
   width: 100%; }
 
 .single-team .team-content {
-  width: 80%;
-  margin: 0 auto;
   padding: 30px 15px;
   position: relative;
+  border: 1px solid #56E2E5;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -1509,8 +1514,6 @@ ul.custom-bullets li {
 }
 
 .content-box {
-  width: 80%;
-  margin: 0 auto;
   padding: 30px;
   position: relative;
   background: #ffffff;
@@ -1545,3 +1548,14 @@ ul.custom-bullets li {
   bottom: 100px;
   right: 50px;
 }
+
+@media only screen and (max-width: 992px) {
+  .order-mobile-1 {
+    order: 1;
+  }
+
+  .order-mobile-2 {
+    order: 2;
+  }
+}
+
